@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,14 +18,9 @@
  require_once("instagram_basic_api.php");
 
  $params= array(
-        'get_code' => isset($_GET['code']) ? $_GET['code'] : '' 
-    
-    );
+        'get_code' => isset($_GET['code']) ? $_GET['code'] : '');
 
     $IG = new instagram_basic_api( $params );
-
-
-
 ?>
 
     <h1>Lab: Pixel Art Maker</h1>
