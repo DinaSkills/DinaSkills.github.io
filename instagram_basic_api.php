@@ -1,5 +1,5 @@
 <?php
-    require_once( 'defines.php' );
+    require_once( './defines.php' );
     
 Class  instagram_basic_api{
    private $appId = INSTA_APP_ID;
@@ -13,10 +13,10 @@ Class  instagram_basic_api{
 
 		function __construct( $params ) {
 			// save instagram code
-			$this->_getCode = $params['get_code'];
+			$this->getCode = $params['get_code'];
 
 			// get authorization url
-			$this->_setAuthorizationUrl();
+			$this->setAuthorizationUrl();
    }
 
    private function setAuthrizationUrl(){
